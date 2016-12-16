@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F95BB4241E04142400EA3AAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95BB4231E04142400EA3AAA /* AppDelegate.swift */; };
+		F95BB4261E04142400EA3AAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95BB4251E04142400EA3AAA /* ViewController.swift */; };
+		F95BB4291E04142500EA3AAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F95BB4271E04142500EA3AAA /* Main.storyboard */; };
+		F95BB42B1E04142500EA3AAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F95BB42A1E04142500EA3AAA /* Assets.xcassets */; };
+		F95BB42E1E04142500EA3AAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F95BB42C1E04142500EA3AAA /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F95BB4201E04142400EA3AAA /* Morozov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morozov.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F95BB4231E04142400EA3AAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F95BB4251E04142400EA3AAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F95BB4281E04142500EA3AAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F95BB42A1E04142500EA3AAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F95BB42D1E04142500EA3AAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F95BB42F1E04142500EA3AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F95BB41D1E04142400EA3AAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F95BB4171E04142400EA3AAA = {
+			isa = PBXGroup;
+			children = (
+				F95BB4221E04142400EA3AAA /* Morozov */,
+				F95BB4211E04142400EA3AAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F95BB4211E04142400EA3AAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F95BB4201E04142400EA3AAA /* Morozov.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F95BB4221E04142400EA3AAA /* Morozov */ = {
+			isa = PBXGroup;
+			children = (
+				F95BB4231E04142400EA3AAA /* AppDelegate.swift */,
+				F95BB4251E04142400EA3AAA /* ViewController.swift */,
+				F95BB4271E04142500EA3AAA /* Main.storyboard */,
+				F95BB42A1E04142500EA3AAA /* Assets.xcassets */,
+				F95BB42C1E04142500EA3AAA /* LaunchScreen.storyboard */,
+				F95BB42F1E04142500EA3AAA /* Info.plist */,
+			);
+			path = Morozov;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F95BB41F1E04142400EA3AAA /* Morozov */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F95BB4321E04142500EA3AAA /* Build configuration list for PBXNativeTarget "Morozov" */;
+			buildPhases = (
+				F95BB41C1E04142400EA3AAA /* Sources */,
+				F95BB41D1E04142400EA3AAA /* Frameworks */,
+				F95BB41E1E04142400EA3AAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Morozov;
+			productName = Morozov;
+			productReference = F95BB4201E04142400EA3AAA /* Morozov.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F95BB4181E04142400EA3AAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Mykyta Shytik";
+				TargetAttributes = {
+					F95BB41F1E04142400EA3AAA = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 78JAHBW3F8;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F95BB41B1E04142400EA3AAA /* Build configuration list for PBXProject "Morozov" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F95BB4171E04142400EA3AAA;
+			productRefGroup = F95BB4211E04142400EA3AAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F95BB41F1E04142400EA3AAA /* Morozov */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F95BB41E1E04142400EA3AAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F95BB42E1E04142500EA3AAA /* LaunchScreen.storyboard in Resources */,
+				F95BB42B1E04142500EA3AAA /* Assets.xcassets in Resources */,
+				F95BB4291E04142500EA3AAA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F95BB41C1E04142400EA3AAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F95BB4261E04142400EA3AAA /* ViewController.swift in Sources */,
+				F95BB4241E04142400EA3AAA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F95BB4271E04142500EA3AAA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F95BB4281E04142500EA3AAA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F95BB42C1E04142500EA3AAA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F95BB42D1E04142500EA3AAA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F95BB4301E04142500EA3AAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F95BB4311E04142500EA3AAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F95BB4331E04142500EA3AAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 78JAHBW3F8;
+				INFOPLIST_FILE = Morozov/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mykytashytik.Morozov;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F95BB4341E04142500EA3AAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 78JAHBW3F8;
+				INFOPLIST_FILE = Morozov/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mykytashytik.Morozov;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F95BB41B1E04142400EA3AAA /* Build configuration list for PBXProject "Morozov" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F95BB4301E04142500EA3AAA /* Debug */,
+				F95BB4311E04142500EA3AAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F95BB4321E04142500EA3AAA /* Build configuration list for PBXNativeTarget "Morozov" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F95BB4331E04142500EA3AAA /* Debug */,
+				F95BB4341E04142500EA3AAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F95BB4181E04142400EA3AAA /* Project object */;
+}
