@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96EEA6DADF9BD1EA85F518F6 /* Pods_Morozov.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AD56BE01386892844B0B0F /* Pods_Morozov.framework */; };
 		F95BB4241E04142400EA3AAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95BB4231E04142400EA3AAA /* AppDelegate.swift */; };
 		F95BB4261E04142400EA3AAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95BB4251E04142400EA3AAA /* ViewController.swift */; };
 		F95BB4291E04142500EA3AAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F95BB4271E04142500EA3AAA /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40ACEB075A9C10BC84B902C4 /* Pods-Morozov.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morozov.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Morozov/Pods-Morozov.debug.xcconfig"; sourceTree = "<group>"; };
+		A2AD56BE01386892844B0B0F /* Pods_Morozov.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Morozov.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE685C8C0E023F20BE48115A /* Pods-Morozov.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morozov.release.xcconfig"; path = "Pods/Target Support Files/Pods-Morozov/Pods-Morozov.release.xcconfig"; sourceTree = "<group>"; };
 		F95BB4201E04142400EA3AAA /* Morozov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morozov.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F95BB4231E04142400EA3AAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F95BB4251E04142400EA3AAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96EEA6DADF9BD1EA85F518F6 /* Pods_Morozov.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25AD7A24496D897DB81A141F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40ACEB075A9C10BC84B902C4 /* Pods-Morozov.debug.xcconfig */,
+				CE685C8C0E023F20BE48115A /* Pods-Morozov.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9E35C7167482BB0DDB5B303B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2AD56BE01386892844B0B0F /* Pods_Morozov.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F95BB4171E04142400EA3AAA = {
 			isa = PBXGroup;
 			children = (
 				F95BB4221E04142400EA3AAA /* Morozov */,
 				F95BB4211E04142400EA3AAA /* Products */,
+				25AD7A24496D897DB81A141F /* Pods */,
+				9E35C7167482BB0DDB5B303B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F95BB4321E04142500EA3AAA /* Build configuration list for PBXNativeTarget "Morozov" */;
 			buildPhases = (
+				BC9E5CAFDA374B9494907E32 /* [CP] Check Pods Manifest.lock */,
 				F95BB41C1E04142400EA3AAA /* Sources */,
 				F95BB41D1E04142400EA3AAA /* Frameworks */,
 				F95BB41E1E04142400EA3AAA /* Resources */,
+				5A5E4372FE9FD772D41AEF29 /* [CP] Embed Pods Frameworks */,
+				4301679C3A49BD3D4EEDBFE0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4301679C3A49BD3D4EEDBFE0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Morozov/Pods-Morozov-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A5E4372FE9FD772D41AEF29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Morozov/Pods-Morozov-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC9E5CAFDA374B9494907E32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F95BB41C1E04142400EA3AAA /* Sources */ = {
@@ -257,6 +332,7 @@
 		};
 		F95BB4331E04142500EA3AAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40ACEB075A9C10BC84B902C4 /* Pods-Morozov.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 78JAHBW3F8;
@@ -270,6 +346,7 @@
 		};
 		F95BB4341E04142500EA3AAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE685C8C0E023F20BE48115A /* Pods-Morozov.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 78JAHBW3F8;
@@ -300,6 +377,7 @@
 				F95BB4341E04142500EA3AAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
