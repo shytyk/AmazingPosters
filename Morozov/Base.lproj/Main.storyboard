@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="K22 Didoni.otf">
+            <string>K22Didoni</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Posters List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PostersListViewController" customModule="Morozov" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +22,111 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" delaysContentTouches="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vLe-St-ID2">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Nmo-vP-zNx">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="NF0-of-ybB">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" delaysContentTouches="NO" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQF-Ng-vRh">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ufj-BD-AMt">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="eWT-0o-xNl">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amazing Posters" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="imX-pJ-7vr">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="zBP-aG-tjP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="K22Didoni" family="K22 Didoni" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Dmitriy Morozov" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mu-s5-Zxy">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="dkF-08-11g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1N-gH-sJC">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="8Kl-RH-ZTd"/>
+                                    <constraint firstAttribute="width" constant="300" id="TLe-PA-GfL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="K22Didoni" family="K22 Didoni" pointSize="27"/>
+                                <state key="normal" title="Contact us">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="contactTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="n2J-Gn-Ouq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="imX-pJ-7vr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="24" id="3C5-So-ci0"/>
+                            <constraint firstItem="4mu-s5-Zxy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="24" id="CSC-Jx-WS4"/>
+                            <constraint firstItem="cQF-Ng-vRh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GGg-Lq-jpH"/>
+                            <constraint firstItem="imX-pJ-7vr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="273" id="Iz1-Qr-zsO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vLe-St-ID2" secondAttribute="bottom" id="Jgl-yb-3PK"/>
+                            <constraint firstAttribute="trailing" secondItem="4mu-s5-Zxy" secondAttribute="trailing" constant="24" id="JnJ-9b-Tmu"/>
+                            <constraint firstAttribute="trailing" secondItem="vLe-St-ID2" secondAttribute="trailing" id="Q4h-Zs-BNS"/>
+                            <constraint firstItem="J1N-gH-sJC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R9f-Ae-sln"/>
+                            <constraint firstAttribute="trailing" secondItem="cQF-Ng-vRh" secondAttribute="trailing" id="RL7-fa-Y3j"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cQF-Ng-vRh" secondAttribute="bottom" id="SOJ-ML-xdg"/>
+                            <constraint firstItem="vLe-St-ID2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kmI-P8-7E9"/>
+                            <constraint firstAttribute="trailing" secondItem="imX-pJ-7vr" secondAttribute="trailing" constant="24" id="mm0-9R-wKy"/>
+                            <constraint firstItem="vLe-St-ID2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nZb-CK-XXD"/>
+                            <constraint firstItem="cQF-Ng-vRh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ufP-PU-byI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="J1N-gH-sJC" secondAttribute="bottom" constant="16" id="ux3-AW-xu8"/>
+                            <constraint firstItem="4mu-s5-Zxy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="vrn-cu-1aE"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="vLe-St-ID2" id="jQ0-Cm-H9V"/>
+                        <outlet property="contactBottomConstraint" destination="ux3-AW-xu8" id="nbh-WU-uBG"/>
+                        <outlet property="contactButton" destination="J1N-gH-sJC" id="GuB-KL-EVI"/>
+                        <outlet property="hiddenCollectionView" destination="cQF-Ng-vRh" id="Si4-0c-lz0"/>
+                        <outlet property="leftTitleConstraint" destination="3C5-So-ci0" id="kwg-JY-r0h"/>
+                        <outlet property="rightTitleConstraint" destination="mm0-9R-wKy" id="RRS-WP-U8y"/>
+                        <outlet property="subtitleLabel" destination="4mu-s5-Zxy" id="k4c-hY-pJZ"/>
+                        <outlet property="subtitleTopConstraint" destination="vrn-cu-1aE" id="tPm-Sf-OZT"/>
+                        <outlet property="topConstraint" destination="Iz1-Qr-zsO" id="f3g-Jf-i6z"/>
+                        <outlet property="topLabel" destination="imX-pJ-7vr" id="ds9-xS-ktM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-274.39999999999998" y="98.50074962518741"/>
         </scene>
     </scenes>
 </document>

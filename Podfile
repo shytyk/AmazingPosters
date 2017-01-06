@@ -7,5 +7,7 @@ target 'Morozov' do
 
   # Pods for Morozov
   pod 'CHTCollectionViewWaterfallLayout'
+  pod 'pop', '~> 1.0'
+  pod 'GreedoLayout'
 
 end

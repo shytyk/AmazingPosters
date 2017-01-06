@@ -2,13 +2,19 @@ PODS:
   - CHTCollectionViewWaterfallLayout (0.9.5):
     - CHTCollectionViewWaterfallLayout/ObjC (= 0.9.5)
   - CHTCollectionViewWaterfallLayout/ObjC (0.9.5)
+  - GreedoLayout (1.2.0)
+  - pop (1.0.9)
 
 DEPENDENCIES:
   - CHTCollectionViewWaterfallLayout
+  - GreedoLayout
+  - pop (~> 1.0)
 
 SPEC CHECKSUMS:
   CHTCollectionViewWaterfallLayout: 775ff73f48cfc13859b62d8bceb96e772e4a0318
+  GreedoLayout: b1a1adc6ed5f281353225e3eb21d18cedee8e513
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
 
-PODFILE CHECKSUM: 565cdf3303cb46113d6608cc8fbf0cb1d725be77
+PODFILE CHECKSUM: 6c8f6da249cbdc99d9f861d748fcbfaf86371ad0
 
 COCOAPODS: 1.0.1
