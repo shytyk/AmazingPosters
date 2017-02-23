@@ -9,5 +9,8 @@ target 'Morozov' do
   pod 'CHTCollectionViewWaterfallLayout'
   pod 'pop', '~> 1.0'
   pod 'GreedoLayout'
-
+  pod 'Ophiuchus', '~> 1.0.3'
+  pod 'DCAnimationKit'
+  pod 'ZCAnimatedLabel'
+  
 end

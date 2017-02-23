@@ -2,19 +2,28 @@ PODS:
   - CHTCollectionViewWaterfallLayout (0.9.5):
     - CHTCollectionViewWaterfallLayout/ObjC (= 0.9.5)
   - CHTCollectionViewWaterfallLayout/ObjC (0.9.5)
+  - DCAnimationKit (0.0.6)
   - GreedoLayout (1.2.0)
+  - Ophiuchus (1.0.3)
   - pop (1.0.9)
+  - ZCAnimatedLabel (0.0.4)
 
 DEPENDENCIES:
   - CHTCollectionViewWaterfallLayout
+  - DCAnimationKit
   - GreedoLayout
+  - Ophiuchus (~> 1.0.3)
   - pop (~> 1.0)
+  - ZCAnimatedLabel
 
 SPEC CHECKSUMS:
   CHTCollectionViewWaterfallLayout: 775ff73f48cfc13859b62d8bceb96e772e4a0318
+  DCAnimationKit: 7133bef877ce1aa113dcfeea1380ca67f91f7608
   GreedoLayout: b1a1adc6ed5f281353225e3eb21d18cedee8e513
+  Ophiuchus: 486de58f85284047835a26e23ac9fe4fe2255391
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  ZCAnimatedLabel: 519b688bef4403fd356bc785f9b61cdfd8e6472d
 
-PODFILE CHECKSUM: 6c8f6da249cbdc99d9f861d748fcbfaf86371ad0
+PODFILE CHECKSUM: b126401bf6178697dafe1fbd7bebfcbddfb253f1
 
 COCOAPODS: 1.0.1
